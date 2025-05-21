@@ -222,7 +222,7 @@ function doTurn(player, secretWord, puzzleString){
                 print(`YOU WON, ${player.name}!! CONGRATULATIONS!!`)
 
                 winner = true; //the boolean flag is set to true and we exit the game 
-                player.totalScore == player.roundScore //round score becomes the player's total score
+                player.totalScore += player.roundScore //round score becomes the player's total score
                 player.roundScore == 0 //reset round score to zero
             
             } else { //if they choose the wrong word, the player loses all their round points 
